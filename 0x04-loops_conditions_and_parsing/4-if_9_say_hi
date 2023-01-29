@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+LMT=10
+i=1
+until [ $i = $LMT  ]; do
+    echo "Best School";
+    i=$((i + 1))
+    if [ $i -eq 9 ]; then
+        echo "Hi";
+    fi
+
+done
+
