@@ -8,6 +8,5 @@ while [ $i -lt $LMT  ]; do
     if [ $i -eq 9 ]; then
         echo "Hi";
     fi
-
 done
 
