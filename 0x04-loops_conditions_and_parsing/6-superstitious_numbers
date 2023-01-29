@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+LMT=20
+i=0
+while [ $i -lt $LMT  ]; do
+    i=$((i + 1))
+    if [ $i -eq 4 ]; then
+        echo $i;
+        echo "bad luck from China";
+    elif [ $i -eq 9 ]; then
+        echo $i;
+        echo "bad luck from Japan";
+    elif [ $i -eq 17 ]; then
+        echo $i;
+        echo "bad luck from Italy";
+    else
+        echo $i;
+    fi
+done
+
+
