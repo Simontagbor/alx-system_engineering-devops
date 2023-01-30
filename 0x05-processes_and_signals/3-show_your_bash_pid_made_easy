@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# A bash script that will display a list of currently running processes
+# Display in a user oriented format
+# show process hierarchy
+
+pgrep --list-name bash | tail -2
