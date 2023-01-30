@@ -3,4 +3,4 @@
 # Display in a user oriented format
 # show process hierarchy
 
-ps -aux --forest
+ps -axu --forest | grep bash | head -3
