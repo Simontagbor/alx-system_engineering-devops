@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 # Display the listening ports(ports in use)
 # we run the netstat program with options;
-# t: displays the programs using tcp protocol,
-# u: displays the programs using the udp protocol
 # l: specifies listening ports
-# p: displays the process ids of each program listed.
-
-sudo netstat -tulp
+# p: displays the process ids of each program listed
+netstat -lp
