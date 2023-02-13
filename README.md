@@ -17,4 +17,18 @@ contained follows:
 * [0x06. Regular expression](./0x06-regular_expressions)
 * [0x07. Networking basics #0](./0x07-networking_basics)
 * [0x08. Networking basics #1](./0x08-networking_basics_2)
+## Author :black_nib:
 
+* **Simon Tagbor** <[Simontagbor](https://github.com/Simontagbor)>
+
+## Acknowledgements :pray:
+All work contained in this project was completed as part of the curriculum for
+ALX Sofware Engineering School is an online full-stack software
+engineering program that prepares students for careers in the tech industry
+using project-based peer learning. For more information, visit
+[this link](https://www.alxafrica.com).
+<p align="center">
+  <img
+    src="https://www.alxafrica.com/wp-content/uploads/2022/01/header-logo.png"
+    alt="ALX SE School logo">
+</p>
