@@ -12,6 +12,9 @@ You must use:
 * database (MySQL)
 * domain name foobar.com configured with a www record that points to your server IP `8.8.8.8`
 
+### [Link to My Design Solution 👨‍🏫](0x09-web_infrastructure_design/0-simple_web_stack.jpg)
+
+
 ## 1. Distributed web infrastructure
 On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com.
 
@@ -24,8 +27,10 @@ You must add:
 * 1 load-balancer (HAproxy)
 * 1 set of application files (your code base)
 * 1 database (MySQL)
-* 
-### [Link to My Design Solution 👨‍🏫]()
+
+
+### [Link to My Design Solution 👨‍🏫](0x09-web_infrastructure_design/0-simple_web_stack.jpg)
+
 
 ## 2. Secured and monitored web infrastructure
 On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
@@ -37,7 +42,7 @@ You must add:
 * 1 SSL certificate to serve www.foobar.com over HTTPS
 * 3 monitoring clients (data collector for Sumologic or other monitoring services)
 
-### [Link to My Design Solution 👨‍🏫]()
+### [Link to My Design Solution 👨‍🏫](0x09-web_infrastructure_design/0-simple_web_stack.jpg)
 
 ## 3. Scale up
 Readme
