@@ -12,7 +12,7 @@ You must use:
 * database (MySQL)
 * domain name foobar.com configured with a www record that points to your server IP `8.8.8.8`
 
-### [Link to My Design Solution 👨‍🏫](0x09-web_infrastructure_design/0-simple_web_stack.jpg)
+### [Link to My Design Solution 👨‍🏫](/0-simple_web_stack.jpg)
 
 
 ## 1. Distributed web infrastructure
@@ -29,7 +29,7 @@ You must add:
 * 1 database (MySQL)
 
 
-### [Link to My Design Solution 👨‍🏫](0x09-web_infrastructure_design/0-simple_web_stack.jpg)
+### [Link to My Design Solution 👨‍🏫](/1-distributed_web_infrastructure.jpg)
 
 
 ## 2. Secured and monitored web infrastructure
@@ -42,7 +42,7 @@ You must add:
 * 1 SSL certificate to serve www.foobar.com over HTTPS
 * 3 monitoring clients (data collector for Sumologic or other monitoring services)
 
-### [Link to My Design Solution 👨‍🏫](0x09-web_infrastructure_design/0-simple_web_stack.jpg)
+### [Link to My Design Solution 👨‍🏫](/2-secured_and_monitored_web_infrastructure.jpg)
 
 ## 3. Scale up
 Readme
@@ -55,4 +55,4 @@ You must add:
 * 1 load-balancer (HAproxy) configured as cluster with the other one
 * Split components (web server, application server, database) with their own server
 
-### [Link to My Design Solution 👨‍🏫]()
+### [Link to My Design Solution 👨‍🏫](/3-sacle_up.JPG)
