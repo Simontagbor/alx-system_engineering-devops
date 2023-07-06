@@ -13,7 +13,7 @@ Using your debugging skills, find out what is keeping an Ubuntu container's Ngin
 
 
 #### Output 
-`
+```
 root@966c5664b21f:/# curl 0:80
 curl: (7) Failed to connect to 0 port 80: Connection refused
 root@966c5664b21f:/#
@@ -46,5 +46,5 @@ Commercial support is available at
 </body>
 </html>
 root@966c5664b21f:/#
-`
+```
 
