@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Stop NGINX service if already running
 sudo service nginx stop
