@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Stop NGINX service if already running
+sudo service nginx stop
+
+# Update NGINX configuration to listen on port 80
+sudo sed -i 's/listen\ \[::\]:80\ default_server/listen\ 80\ default_server/' /etc/nginx/sites-available/default
+
+# Start NGINX service
+sudo service nginx start
+
+echo "NGINX has been configured to listen on port 80."
