@@ -1,38 +1,41 @@
-# Install HAProxy package
-package { 'haproxy':
-  ensure => 'installed',
+# Install package
+package { 'nginx':
+  ensure => installed,
 }
-
-# Configure HAProxy
-file { '/etc/haproxy/haproxy.cfg':
-  ensure  => 'file',
+# configure Nginx
+file { '/etc/nginx/sites-available/default':
+  ensure  => present,
   content => '
-    global
-        daemon
-        maxconn 256
+    server {
+      listen 80;
+      server_name 103565-lb-01;
 
-    defaults
-        mode http
-        timeout connect 5000ms
-        timeout client 50000ms
-        timeout server 50000ms
+      location / {
+        proxy_pass http://54.157.187.34;
+        proxy_set_header X-Served-By $hostname;
+      }
 
-    frontend http-in
-        bind *:80
-        default_backend servers
+      location /redirect_me {
+        return 302 http://google.com;
+      }
 
-    backend servers
-        balance roundrobin
-        server 103565-web-02 100.26.154.56 check port 80
-        server 103565-web-02 100.26.163.22 check port 80
+      error_page 404 /404.html;
+      location = /404.html {
+        root /usr/share/nginx/html;
+        internal;
+      }
+    }
   ',
-  require => Package['haproxy'],
+}
+# create custom 404 page
+file { '/usr/share/nginx/html/404.html':
+  ensure  => present,
+  content => "Ceci n'est pas une page\n",
 }
 
-# Restart HAProxy service
-service { 'haproxy':
-  ensure    => 'running',
+# Restart Nginx
+service { 'nginx':
+  ensure    => running,
   enable    => true,
-  subscribe => File['/etc/haproxy/haproxy.cfg'],
+  subscribe => File['/etc/nginx/sites-available/default', '/usr/share/nginx/html/404.html'],
 }
-
