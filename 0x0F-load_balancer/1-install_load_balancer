@@ -1,5 +1,5 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+# this script will install HAproxy server and set backend server directives for two servers 
 # Update the system
 sudo apt update
 sudo apt upgrade -y
