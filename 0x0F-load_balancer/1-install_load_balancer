@@ -34,8 +34,8 @@ frontend http-in
 
 backend webservers
     balance roundrobin
-    server 103565-web-01 100.26.154.56 check port 80
-    server 103565-web-02 100.26.163.22 check port 80
+    server web-01 100.26.154.56 check port 80
+    server web-02 100.26.163.22 check port 80
 EOT
 
 
