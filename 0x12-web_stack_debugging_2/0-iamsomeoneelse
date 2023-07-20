@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Runs the whomi command as a given user
+# Usage ./0-iamsomeoneelse [user]
+sudo -u $"1" whoami
+
